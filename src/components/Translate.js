@@ -6,8 +6,8 @@ import Convert from './Convert'
 
 const options = [
     {
-        label: 'Afrikans',
-        value: 'af'
+        label: 'Uzbek',
+        value: 'uz'
     },
      {
         label: 'Arabic',
@@ -18,20 +18,20 @@ const options = [
         value: 'de'
     },
     {
-        label: 'Hindi',
-        value: 'hi'
+        label: 'Turkish',
+        value: 'tr'
     }
 ]
 
 const Translate = () => {
     const [language, setLanguage] = useState(options[2])
-    const [text, setText] = useState('')
+    const [text, setText] = useState('i love you')
 
     return (
         <div>
             <div className="ui form">
                 <div className="field">
-                    <label className="ui label">Enter Your Text</label>
+                    <label className="ui label">Enter Your Text in English</label>
                     <input
                         value={text}
                         onChange={(e) => setText(e.target.value)} />

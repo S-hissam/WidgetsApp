@@ -73,19 +73,20 @@ const App = () => {
             <div className="ui container">
              <Header />
             <Route path="/">
-                <Accordion items={items} />
+                    <Translate />
                 </Route>
+            {/* <Route path="/">
+                <Accordion items={items} />
+                </Route> */}
             <Route path="/list">
                 <SearchBar />
                 </Route>
-            <Route path="/translate">
-                <Translate /> </Route>
-            <Route path="/dropdown">
+            {/* <Route path="/dropdown">
                     <Dropdown
                         options={options}
                         selected={selected}
                         onSelectedChange={setSelected}
-                        label='Select a Color'/> </Route>
+                        label='Select a Color'/> </Route> */}
 
             </div>
             
